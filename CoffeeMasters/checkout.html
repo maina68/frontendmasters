@@ -1,1 +1,53 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee-Masters</title>
+</head>
+<body>
+    <div class="page">
+        <header class="brand-header">
+          <h1 class="brand">Coffee Masters</h1>
+        </header>
+        <section class = "checkout">
+            <h2 class="section-title">ITEMS</h2>
+            <article class="coffee-item">
+                <h2>1X  Capuccino</h2>
+                <p>Lite foam.</p>
+                <p>$3.50</p>
+            </article>
+            <article class="coffee-item">
+                <h2>1X  Capuccino</h2>
+                <p>Lite milk.</p>
+                <p>$3.85</p>
+            </article>
+            <article class="coffee-item">
+                <h2>1x  Croissant</h2>
+                <p>Butter</p>
+                <p>$2.45</p>
+            </article>
+        </section>
+        <section class="order
+            <article class="order-details">
+                <h2>NAME</h2>
+                <input type="text" placeholder="Name of order">
+            </article>
+        </section>
+        <section class="payment">
+            <article class="payment-details">
+                <h2>PAYMENT</h2>
+                <input type="number" placeholder="Card Number">
+                <input type="number" placeholder="CCV Number">
+            </article>
+        </section>
+    </div>
+ <!-- Footer with order summary and place order button -->
+    <footer class="order-summary">
+        <p>Subtotal: $<span id="subtotal">9.65</span></p>
+        <p>Tax: $<span id="tax">0.82</span></p>
+        <p>Total: $<span id="total">10.47</span></p>
+        <button type="button" onclick="placeOrder()">Place Order</button>
+    </footer>
+</body>
+</html>
