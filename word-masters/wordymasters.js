@@ -13,10 +13,14 @@ keys.forEach(key => {
     key.addEventListener('click', function() {
         const keyValue = this.textContent;
 
-        if (keyValue === 'Delete') {
+        if (keyValue === 'Backspace') {
             // Remove the last character from the current guess
             currentGuess = currentGuess.slice(0, -1);
-        } else if (keyValue === 'Enter') {
+        } else if (keyValue === 'Delete') {
+            // Clear the current guess
+            currentGuess = '';
+        }
+         else if (keyValue === 'Enter') {
             // Submit the current guess
             if (currentGuess.length === maxGuessLength) {
                 submitGuess();
